@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Social links profile</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@1,14..32,700&display=swap" rel="stylesheet">
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      font-size: 14px;
+      background-color: hsl(0, 0%, 8%);
+      color:hsl(0, 0%, 100%);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      padding: 20px;
+    }
+
+    main {
+      flex-grow: 1;
+      display: grid;
+      place-items: center;
+      width: 100%;
+    }
+
+    .card {
+      background-color: hsl(0, 0%, 12%);
+      border-radius: 10px;
+      padding: 20px;
+      width: 300px;
+      text-align: center;
+    }
+
+    .card-header {
+      margin-bottom: 20px;
+    }
+    .profile-image {
+      width: 80px;
+      height: 80px;
+      aspect-ratio: 16 / 9;
+      object-fit: cover;
+      border-radius: 50%;
+      margin-bottom: 10px;
+    }
+    .name-person {
+      font-size: 24px;
+      font-weight: 700;
+      margin-bottom: 5px;
+      
+    }
+    .direction-person {
+      font-size: 14px;
+      font-weight: 400;
+      color: hsl(75, 94%, 57%);
+      margin-bottom: 30px;
+    }
+    .profecional-role {
+      font-size: 12px;
+      font-weight: 400;
+      color: hsl(0, 0%, 60%);
+      margin-bottom: 20px;
+    }
+    .btn-social {
+      margin-bottom: 10px;
+      font-size: 12px;
+      font-weight: 600;
+    }
+    .social-link {
+      display: block;
+      background-color: hsl(0, 0%, 20%);
+      color: hsl(0, 0%, 100%);
+      text-decoration: none;
+      padding: 10px;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+    }
+
+    footer {
+      width: 100%;
+      padding: 10px 0;
+    }
+
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+
+    @media (max-width: 375px) {
+      body {
+        padding: 10px;
+      }
+      .card {
+        width: 100%;
+        max-width: 350px;
+      }
+    }
+
+    @media screen and (max-width: 375px) {
+      .attribution {
+        font-size: 10px;
+        text-align: center;
+
+      }
+    }
+
+
+  </style>
+</head>
+<body>
+  <main>
+    <div class="card">
+      <div class="card-header">
+        <picture>
+          <img src="./assets/images/avatar-jessica.jpeg" alt="Jessica Randal" class="profile-image">
+        </picture>
+        <h1 class="name-person">Jessica Randall</h1>
+        <p class="direction-person">London, United Kingdom</p>
+        <p class="profecional-role">"Front-end developer and avid reader."</p>
+      </div>
+      <div class="card-body">
+        <div class="btn-social">
+          <a href="#"  class="social-link">
+            <span>GitHub</span>
+          </a>
+        </div>
+        <div class="btn-social">
+          <a href="#"  class="social-link">
+            <span>Frontend Mentor</span>
+          </a>
+        </div>
+        <div class="btn-social">
+          <a href="#"  class="social-link">
+            <span>LinkedIn</span>
+          </a>
+        </div>
+        <div class="btn-social">
+          <a href="#"  class="social-link">
+            <span>Twitter</span>
+          </a>
+        </div> 
+        <div class="btn-social">
+          <a href="#"  class="social-link">
+            <span>Instagram</span>
+          </a>
+        </div>   
+      </div>
+    </div>
+  </main>
+  <footer>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Your Name Here</a>.
+    </div>
+  </footer>
+</body>
+</html>
